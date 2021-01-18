@@ -5,83 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
+<div class="main">
+  <div class="container">
 
   
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
+  <button>Dark Mode</button>
+  <h1>Social Media Dashboard</h1>
+  <h5>Total Followers: 23,004</h5>
+  <div class="social_media">
+    <div class="social_media-box facebook">
+ <p class="stat_name">@nathanf</p>
+ <p class="stat_number">1987</p>
+ <p class="stat_followers">Followers</p>
+ <p class="stat_change">12 Today</p>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <div class="social_media-box twitter">
+      <p class="stat_name">@nathanf</p>
+      <p class="stat_number">1044</p>
+      <p class="stat_followers">Followers</p>
+      <p class="stat_change"> 99 Today</p>
+
+    </div>
+    <div class="social_media-box instagram">
+      <p class="stat_name">@realnathanf</p>
+      <p class="stat_number">11k</p>
+      <p class="stat_followers">Followers</p>
+      <p class="stat_change">1099 Today</p>
+
+    </div>
+    <div class="social_media-box youtube">
+      <p class="stat_name">Nathan F.</p>
+      <p class="stat_number">8239</p>
+      <p class="stat_followers">Subscribers</p>
+      <p class="stat_change">144 Today</p>
+    </div>
   </div>
+
+  <div class="overview_today">
+    <h3>Overview - Today</h3>
+    <div class="overview_content">
+      <div class="overview_today-box">
+        <h4>Page Views</h4>
+        <p class="count">87</p>
+        <p class="stat_change">3%</p>
+          </div>
+          <div class="overview_today-box">
+            <h4>Likes</h4>
+            <p class="count">52</p>
+        <p class="stat_change">2%</p>
+        
+          </div>
+          <div class="overview_today-box">
+            <h4>Likes</h4>
+            <p class="count">5462</p>
+            <p class="stat_change">2257%</p>
+        
+          </div>
+          <div class="overview_today-box">
+            <h4>Profile Views</h4>
+            <p class="count">52k</p>
+            <p class="stat_change">1375%</p>
+        
+        
+          </div>
+          <div class="overview_today-box">
+            <h4>Retweets</h4>
+            <p class="count">117</p>
+            <p class="stat_change">303%</p>
+        
+        
+          </div>
+          <div class="overview_today-box">
+            <h4>Likes</h4>
+        <p class="count">507</p>
+        <p class="stat_change">553%</p>
+       
+          </div>
+          <div class="overview_today-box">
+            <h4>Likes</h4>
+            <p class="count">107</p>
+            <p class="stat_change">19%</p>
+        
+        
+          </div>
+          <div class="overview_today-box">
+            <h4>Total Views</h4>
+            <p class="count">1407</p>
+            <p class="stat_change">12%</p>
+        
+        
+          </div>
+    </div>
+   
+  </div>
+</div>
+</div>
 </body>
 </html>
