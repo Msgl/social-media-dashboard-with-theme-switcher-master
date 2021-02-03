@@ -12,101 +12,113 @@
 
 </head>
 <body>
+
 <div class="main">
-  <div class="container">
+  <div class="nav">
+    <button>Dark Mode</button>
+    <h1>Social Media Dashboard</h1>
+    <h5>Total Followers: 23,004</h5>
+  </div>
+    
 
-  
-  <button>Dark Mode</button>
-  <h1>Social Media Dashboard</h1>
-  <h5>Total Followers: 23,004</h5>
-  <div class="social_media">
-    <div class="social_media-box facebook">
- <p class="stat_name">@nathanf</p>
- <p class="stat_number">1987</p>
- <p class="stat_followers">Followers</p>
- <p class="stat_change">12 Today</p>
-  
-    </div>
-    <div class="social_media-box twitter">
-      <p class="stat_name">@nathanf</p>
-      <p class="stat_number">1044</p>
-      <p class="stat_followers">Followers</p>
-      <p class="stat_change"> 99 Today</p>
+  <!-- SOCIAL-MEDIA -->
+  <div class="social-media">
+    <div class="social-media__container">
+      <div class="social-media__box facebook">
+        <p class="social-media__name">@nathanf</p>
+        <p class="social-media__number">1987</p>
+        <p class="social-media__followers">Followers</p>
+        <p class="social-media__change increase">12 Today</p>
+      </div>
 
-    </div>
-    <div class="social_media-box instagram">
-      <p class="stat_name">@realnathanf</p>
-      <p class="stat_number">11k</p>
-      <p class="stat_followers">Followers</p>
-      <p class="stat_change">1099 Today</p>
+      <div class="social-media__box twitter">
+        <p class="social-media__name">@nathanf</p>
+        <p class="social-media__number">1044</p>
+        <p class="social-media__followers">Followers</p>
+        <p class="social-media__change increase"> 99 Today</p>
+      </div>
 
-    </div>
-    <div class="social_media-box youtube">
-      <p class="stat_name">Nathan F.</p>
-      <p class="stat_number">8239</p>
-      <p class="stat_followers">Subscribers</p>
-      <p class="stat_change">144 Today</p>
+      <div class="social-media__box instagram">
+        <p class="social-media__name">@realnathanf</p>
+        <p class="social-media__number">11k</p>
+        <p class="social-media__followers">Followers</p>
+        <p class="social-media__change increase">1099 Today</p>
+      </div>
+
+      <div class="social-media__box youtube">
+        <p class="social-media__name">Nathan F.</p>
+        <p class="social-media__number">8239</p>
+        <p class="social-media__followers">Subscribers</p>
+        <p class="social-media__change decrease">144 Today</p>
+      </div>
     </div>
   </div>
 
-  <div class="overview_today">
+  <!-- OVERVIEW -->
+  <div class="overview">
     <h3>Overview - Today</h3>
-    <div class="overview_content">
-      <div class="overview_today-box">
-        <h4>Page Views</h4>
-        <p class="count">87</p>
-        <p class="stat_change">3%</p>
-          </div>
-          <div class="overview_today-box">
-            <h4>Likes</h4>
-            <p class="count">52</p>
-        <p class="stat_change">2%</p>
-        
-          </div>
-          <div class="overview_today-box">
-            <h4>Likes</h4>
-            <p class="count">5462</p>
-            <p class="stat_change">2257%</p>
-        
-          </div>
-          <div class="overview_today-box">
-            <h4>Profile Views</h4>
-            <p class="count">52k</p>
-            <p class="stat_change">1375%</p>
-        
-        
-          </div>
-          <div class="overview_today-box">
-            <h4>Retweets</h4>
-            <p class="count">117</p>
-            <p class="stat_change">303%</p>
-        
-        
-          </div>
-          <div class="overview_today-box">
-            <h4>Likes</h4>
-        <p class="count">507</p>
-        <p class="stat_change">553%</p>
-       
-          </div>
-          <div class="overview_today-box">
-            <h4>Likes</h4>
-            <p class="count">107</p>
-            <p class="stat_change">19%</p>
-        
-        
-          </div>
-          <div class="overview_today-box">
-            <h4>Total Views</h4>
-            <p class="count">1407</p>
-            <p class="stat_change">12%</p>
-        
-        
-          </div>
+    <div class="overview__container">
+  
+      <div class="overview__box">
+        <h4 class="overview__title">Page Views</h4>
+        <img class="overview__image" src="/images/icon-facebook.svg" alt="facebook-icon"></img>
+        <p class="overview__count">87</p>
+        <p class="overview__change increase">3%</p>
+      </div>
+  
+      <div class="overview__box">
+        <h4 class="overview__title">Likes</h4>
+        <img class="overview__image" src="/images/icon-facebook.svg" alt="facebook-icon"></img>
+        <p class="overview__count">52</p>
+        <p class="overview__change decrease">2%</p>
+      </div>
+  
+      <div class="overview__box">
+        <h4 class="overview__title">Likes</h4>
+        <img class="overview__image" src="/images/icon-instagram.svg" alt="facebook-icon"></img>
+        <p class="overview__count">5462</p>
+        <p class="overview__change increase">2257%</p>
+      </div>
+  
+      <div class="overview__box">
+        <h4 class="overview__title">Profile Views</h4>
+        <img class="overview__image" src="/images/icon-instagram.svg" alt="facebook-icon"></img>
+        <p class="overview__count">52k</p>
+        <p class="overview__change increase">1375%</p>
+      </div>
     </div>
-   
+
+    <div class="overview__container">
+      <div class="overview__box">
+        <h4 class="overview__title">Retweets</h4>
+        <img class="overview__image" src="/images/icon-twitter.svg" alt="facebook-icon"></img>
+        <p class="overview__count">117</p>
+        <p class="overview__change increase">303%</p>
+      </div>
+  
+      <div class="overview__box">
+        <h4 class="overview__title">Likes</h4>
+        <img class="overview__image" src="/images/icon-twitter.svg" alt="facebook-icon"></img>
+        <p class="overview__count">507</p>
+        <p class="overview__change increase">553%</p>
+      </div>
+  
+      <div class="overview__box">
+        <h4 class="overview__title">Likes</h4>
+        <img class="overview__image" src="/images/icon-youtube.svg" alt="facebook-icon"></img>
+        <p class="overview__count">107</p>
+        <p class="overview__change decrease">19%</p>
+      </div>
+  
+      <div class="overview__box">
+        <h4 class="overview__title">Total Views</h4>
+        <img class="overview__image" src="/images/icon-youtube.svg" alt="facebook-icon"></img>
+        <p class="overview__count">1407</p>
+        <p class="overview__change decrease">12%</p>
+      </div>
+    </div>
   </div>
 </div>
-</div>
+
 </body>
 </html>
