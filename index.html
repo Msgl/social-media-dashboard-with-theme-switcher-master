@@ -12,41 +12,61 @@
 
 </head>
 <body>
+  <div class="bg-pattern"></div>
 
 <div class="main">
   <div class="nav">
-    <button>Dark Mode</button>
-    <h1>Social Media Dashboard</h1>
-    <h5>Total Followers: 23,004</h5>
+    <div class="nav__title">
+      
+      <h1>Social Media Dashboard</h1>
+      <h5>Total Followers: 23,004</h5>
+    </div>
+    
+
+    <button onclick="myFunction()">Dark Mode</button>
   </div>
     
 
   <!-- SOCIAL-MEDIA -->
   <div class="social-media">
     <div class="social-media__container">
+
       <div class="social-media__box facebook">
-        <p class="social-media__name">@nathanf</p>
+        <p class="social-media__name"> 
+          <img class="social__image" src="/images/icon-facebook.svg" alt="facebook-icon">
+          </img>@nathanf
+        </p>
         <p class="social-media__number">1987</p>
         <p class="social-media__followers">Followers</p>
         <p class="social-media__change increase">12 Today</p>
       </div>
 
       <div class="social-media__box twitter">
-        <p class="social-media__name">@nathanf</p>
+        <p class="social-media__name">
+          <img class="social__image" src="/images/icon-twitter.svg" alt="twitter-icon">
+          </img>@nathanf
+        </p>
         <p class="social-media__number">1044</p>
         <p class="social-media__followers">Followers</p>
         <p class="social-media__change increase"> 99 Today</p>
       </div>
 
       <div class="social-media__box instagram">
-        <p class="social-media__name">@realnathanf</p>
+        <p class="social-media__name">
+          <img class="social__image" src="/images/icon-instagram.svg" alt="instagram-icon">
+          </img>@realnathanf
+        </p>
         <p class="social-media__number">11k</p>
         <p class="social-media__followers">Followers</p>
         <p class="social-media__change increase">1099 Today</p>
       </div>
 
       <div class="social-media__box youtube">
-        <p class="social-media__name">Nathan F.</p>
+        <p class="social-media__name">
+          <img class="social__image" src="/images/icon-youtube.svg" alt="youtube-icon">
+          </img>
+          Nathan F.
+        </p>
         <p class="social-media__number">8239</p>
         <p class="social-media__followers">Subscribers</p>
         <p class="social-media__change decrease">144 Today</p>
@@ -120,5 +140,6 @@
   </div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
