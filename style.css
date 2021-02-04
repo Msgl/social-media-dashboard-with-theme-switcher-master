@@ -33,10 +33,61 @@ body {
     justify-content: space-between;
 }
 
-
-
-button {
+.button__container {
+    display: flex;
     margin-right: 20px;
+    width: 150px;
+}
+
+.button__title {
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.button input { 
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.switch {
+    background: hsl(230, 22%, 74%);
+    border-radius: 34px;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.switch:before {
+    background-color: white;
+    border-radius: 34px;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    position: absolute;
+    right: 4px;
+    transition: .4s;
+    width: 26px;
+} 
+
+input:checked + .switch {
+    background: linear-gradient(hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+}
+
+input:checked + .switch:before {
+    transform: translateX(-26px);
+    background-color: hsl(228, 28%, 20%);
 }
 
 h3, h4, h5, .social-media__name, .social-media__followers {
@@ -63,6 +114,7 @@ h3, h4, h5, .social-media__name, .social-media__followers {
     margin-right: 20px;
     flex-direction: column;
     text-align: center;
+    border-radius: 5px;
 }
 
 .facebook {
@@ -75,8 +127,9 @@ h3, h4, h5, .social-media__name, .social-media__followers {
 }
 
 .instagram {
-    border-top: 4px solid;
-    
+    border-top: double 4px ;
+    border-image: linear-gradient(-45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image-slice: 1;
 }
 
 .youtube {
@@ -139,7 +192,7 @@ h3, h4, h5, .social-media__name, .social-media__followers {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    
+    border-radius: 5px;
 }
 
 .overview__box > * {
@@ -170,9 +223,6 @@ h3, h4, h5, .social-media__name, .social-media__followers {
     font-size: 1.1em;
 }
 
-
-
-
 .increase {
     color: hsl(163, 72%, 41%);
 }
@@ -192,7 +242,7 @@ h3, h4, h5, .social-media__name, .social-media__followers {
     font-size: 12px;
 }
 
-.overview__box:hover, .social-media__box:hover {
+.overview__box:hover, .social-media__box:hover, .instagram:hover {
     background-color:hsl(226, 25%, 90%);
 }
 
@@ -219,3 +269,37 @@ h3, h4, h5, .social-media__name, .social-media__followers {
 h3 .dark-mode, h4 .dark-mode, h5 .dark-mode, .social-media__name .dark-mode, .social-media__followers  .dark-mode{
     color: hsl(228, 34%, 66%);
 } 
+
+
+@media only screen and (max-width: 1100px) {
+    .bg-pattern {
+        height: 300px;
+    }
+
+    .main {
+        width: 300px;
+    }
+    
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav__title {
+        padding-bottom: 15px;
+        border-bottom: solid 2px hsl(228, 12%, 44%);
+    }
+
+    .button__container {
+        padding-top: 10px;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .social-media__container{
+        flex-direction: column;
+    }
+
+    .overview__container {
+        flex-direction: column;
+    }
+  }

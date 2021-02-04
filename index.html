@@ -6,8 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
 </head>
@@ -17,13 +17,18 @@
 <div class="main">
   <div class="nav">
     <div class="nav__title">
-      
       <h1>Social Media Dashboard</h1>
       <h5>Total Followers: 23,004</h5>
     </div>
-    
 
-    <button onclick="myFunction()">Dark Mode</button>
+    <div class="button__container">
+      <h5 class="button__title">Dark Mode</h5>
+      <label class="button" >
+        <input type="checkbox" onclick="myFunction()">
+        <span class="switch"></span>
+      </label>
+    </div>
+    
   </div>
     
 
@@ -34,7 +39,7 @@
       <div class="social-media__box facebook">
         <p class="social-media__name"> 
           <img class="social__image" src="/images/icon-facebook.svg" alt="facebook-icon">
-          </img>@nathanf
+          @nathanf
         </p>
         <p class="social-media__number">1987</p>
         <p class="social-media__followers">Followers</p>
@@ -44,7 +49,7 @@
       <div class="social-media__box twitter">
         <p class="social-media__name">
           <img class="social__image" src="/images/icon-twitter.svg" alt="twitter-icon">
-          </img>@nathanf
+          @nathanf
         </p>
         <p class="social-media__number">1044</p>
         <p class="social-media__followers">Followers</p>
@@ -54,7 +59,7 @@
       <div class="social-media__box instagram">
         <p class="social-media__name">
           <img class="social__image" src="/images/icon-instagram.svg" alt="instagram-icon">
-          </img>@realnathanf
+          @realnathanf
         </p>
         <p class="social-media__number">11k</p>
         <p class="social-media__followers">Followers</p>
@@ -64,7 +69,6 @@
       <div class="social-media__box youtube">
         <p class="social-media__name">
           <img class="social__image" src="/images/icon-youtube.svg" alt="youtube-icon">
-          </img>
           Nathan F.
         </p>
         <p class="social-media__number">8239</p>
@@ -81,28 +85,28 @@
   
       <div class="overview__box">
         <h4 class="overview__title">Page Views</h4>
-        <img class="overview__image" src="/images/icon-facebook.svg" alt="facebook-icon"></img>
+        <img class="overview__image" src="/images/icon-facebook.svg" alt="facebook-icon">
         <p class="overview__count">87</p>
         <p class="overview__change increase">3%</p>
       </div>
   
       <div class="overview__box">
         <h4 class="overview__title">Likes</h4>
-        <img class="overview__image" src="/images/icon-facebook.svg" alt="facebook-icon"></img>
+        <img class="overview__image" src="/images/icon-facebook.svg" alt="facebook-icon">
         <p class="overview__count">52</p>
         <p class="overview__change decrease">2%</p>
       </div>
   
       <div class="overview__box">
         <h4 class="overview__title">Likes</h4>
-        <img class="overview__image" src="/images/icon-instagram.svg" alt="facebook-icon"></img>
+        <img class="overview__image" src="/images/icon-instagram.svg" alt="facebook-icon">
         <p class="overview__count">5462</p>
         <p class="overview__change increase">2257%</p>
       </div>
   
       <div class="overview__box">
         <h4 class="overview__title">Profile Views</h4>
-        <img class="overview__image" src="/images/icon-instagram.svg" alt="facebook-icon"></img>
+        <img class="overview__image" src="/images/icon-instagram.svg" alt="facebook-icon">
         <p class="overview__count">52k</p>
         <p class="overview__change increase">1375%</p>
       </div>
@@ -111,28 +115,28 @@
     <div class="overview__container">
       <div class="overview__box">
         <h4 class="overview__title">Retweets</h4>
-        <img class="overview__image" src="/images/icon-twitter.svg" alt="facebook-icon"></img>
+        <img class="overview__image" src="/images/icon-twitter.svg" alt="facebook-icon">
         <p class="overview__count">117</p>
         <p class="overview__change increase">303%</p>
       </div>
   
       <div class="overview__box">
         <h4 class="overview__title">Likes</h4>
-        <img class="overview__image" src="/images/icon-twitter.svg" alt="facebook-icon"></img>
+        <img class="overview__image" src="/images/icon-twitter.svg" alt="facebook-icon">
         <p class="overview__count">507</p>
         <p class="overview__change increase">553%</p>
       </div>
   
       <div class="overview__box">
         <h4 class="overview__title">Likes</h4>
-        <img class="overview__image" src="/images/icon-youtube.svg" alt="facebook-icon"></img>
+        <img class="overview__image" src="/images/icon-youtube.svg" alt="facebook-icon">
         <p class="overview__count">107</p>
         <p class="overview__change decrease">19%</p>
       </div>
   
       <div class="overview__box">
         <h4 class="overview__title">Total Views</h4>
-        <img class="overview__image" src="/images/icon-youtube.svg" alt="facebook-icon"></img>
+        <img class="overview__image" src="/images/icon-youtube.svg" alt="facebook-icon">
         <p class="overview__count">1407</p>
         <p class="overview__change decrease">12%</p>
       </div>
